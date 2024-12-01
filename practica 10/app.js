@@ -8,7 +8,7 @@ do{
 
     if(numeroSecreto<numeroUsuario){
         alert("El numero secreto es menor");
-    }else{
+    }else if(numeroSecreto>numeroUsuario){
         alert("El numero secreto es mayor");
     }
 
