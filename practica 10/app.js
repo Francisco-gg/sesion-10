@@ -1,6 +1,7 @@
 alert("Hola Francisco");
 
 let numeroUsuario=0;
+let numeroSecreto=0;
 
 do{
     let numeroSecreto=prompt("¿Podrias indicarme un numero, por favor?");
