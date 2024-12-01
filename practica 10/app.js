@@ -1,6 +1,7 @@
 alert("Hola Francisco");
 
 let numeroUsuario=0;
+let attempt=0;
 let numeroSecreto=Math.floor(Math.random()*10)+1;
 
 do{
@@ -11,8 +12,8 @@ do{
     }else if(numeroSecreto>numeroUsuario){
         alert("El numero secreto es mayor");
     }
-
+    attempt++;
 }while(numeroSecreto!=numeroUsuario);
 
 alert("GANASTE, acertaste el numero");
-console.log(numeroSecreto);
+alert("Numero de intentos: "); console.log(attempt);
