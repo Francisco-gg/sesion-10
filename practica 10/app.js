@@ -12,8 +12,8 @@ do{
     }else if(numeroSecreto>numeroUsuario){
         alert("El numero secreto es mayor");
     }
-    attempt++;
+    attempt=attempt+1;
 }while(numeroSecreto!=numeroUsuario);
 
 alert("GANASTE, acertaste el numero");
-alert("Numero de intentos: "); console.log(attempt);
+alert("Numero de intentos: " + attempt);
