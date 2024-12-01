@@ -11,6 +11,12 @@ do{
         alert("Acertaste el numero");
     }else{
         alert("No acertaste el numero");
+
+        if(numeroSecreto<numeroUsuario){
+            alert("El numero secreto es menor");
+        }else{
+            alert("El numero secreto es mayor");
+        }
     }
 
     console.log(numeroSecreto);
