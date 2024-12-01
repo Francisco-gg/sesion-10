@@ -12,6 +12,7 @@ do{
     }else{
         alert("No acertaste el numero");
     }
-}while(numeroSecreto!=numeroUsuario);
 
-console.log(numeroSecreto);
+    console.log(numeroSecreto);
+
+}while(numeroSecreto!=numeroUsuario);
