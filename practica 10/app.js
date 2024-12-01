@@ -1,7 +1,7 @@
 alert("Hola Francisco");
 
 let numeroUsuario=0;
-let numeroSecreto=10;
+let numeroSecreto=25;
 
 do{
     numeroUsuario=prompt("Ingresa un numero");
