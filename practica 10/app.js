@@ -1,23 +1,18 @@
 alert("Hola Francisco");
 
 let numeroUsuario=0;
-let numeroSecreto=0;
+let numeroSecreto=10;
 
 do{
-    numeroSecreto=prompt("¿Podrias indicarme un numero, por favor?");
     numeroUsuario=prompt("Ingresa un numero");
 
-    if(numeroSecreto==numeroUsuario){
-        alert("Acertaste el numero");
+    if(numeroSecreto<numeroUsuario){
+        alert("El numero secreto es menor");
     }else{
-        alert("No acertaste el numero");
-
-        if(numeroSecreto<numeroUsuario){
-            alert("El numero secreto es menor");
-        }else{
-            alert("El numero secreto es mayor");
-        }
+        alert("El numero secreto es mayor");
     }
 
-    console.log(numeroSecreto);
 }while(numeroSecreto!=numeroUsuario);
+
+alert("GANASTE, acertaste el numero");
+console.log(numeroSecreto);
