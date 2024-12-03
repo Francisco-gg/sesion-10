@@ -1,85 +1,92 @@
-
-let x;
-let y;
 let odd;
-let resultado;
+var resultado;
 
-odd=prompt("Elije una opcion: ");
+do{
+    odd=prompt("Elije una opcion  ||  1.SUMAR  ||  2.RESTAR  ||  3.MULTIPLICAR  ||  4.DIVIDIR  :");
 
-switch(odd){
-    case 1:{
+    do{
+        if(odd<=0 || odd>=5){
+            alert("ERROR 404");
+            alert("ELIJA UNA OPCION VALIDA PROFAVOR");
+            odd=prompt("Elija una opcion: ");
+        }
+    }while(odd<=0 || odd>=5);
+        
+    if(odd==1){
+    
         alert("SUMAR");
-        x=prompt("Ingrese el primer numero: ");
-        y=prompt("ingrese el segundo numero: ");
-
-        resultado=x+y;
-
-        alert("RESULTADO DE " + x, "+" + y, " ES: "+resultado);
-        break;
-    }
-
-    case 2:{
+        x=Number(prompt("Ingrese el primer numero: "));
+        y=Number(prompt("Ingrese el segundo numero: "));
+        
+        resultado = x + y;
+    
+        alert("RESULTADO DE "+x+"+"+y+" ES: "+resultado);
+    
+        seguir=prompt("Desea hacer otra operacion ? (s/n): ");
+    }else if(odd==2){
+    
         alert("RESTAR");
         alert("RECORDATORIO!!!!!!");
         alert("El primer número debe ser mayor que el segundo");
         alert("Con eso en mente...sigamos");
-        x=prompt("Ingrese el primer numero: ");
-        y=prompt("Ingrese el segundo numero: ");
-
+        x=Number(prompt("Ingrese el primer numero: "));
+        y=Number(prompt("Ingrese el segundo numero: "));
+    
         do{
             if(x<y){
-
-                alert(x, "Es menor que " + y);
+                alert(x+" Es menor que "+y);
                 alert("Ingrese de nuevo los 2 numeros");
-                x=prompt("Ingrese el primer numero: ");
-                 y=prompt("ingrese el segundo numero: ");
+                x=Number(prompt("Ingrese el primer numero: "));
+                y=Number(prompt("Ingrese el segundo numero: "));
             }
         }while(x<y);
-
-        alert("RESULTADO DE " + x, "-" + y, " ES: "+resultado);
-        break;
-    }
-
-    case 3:{
+    
+        alert("RESULTADO DE "+x+"-"+y+" ES: "+resultado);
+        seguir=prompt("Desea hacer otra operacion ? (s/n): ");
+    }else if(odd==3){
+    
         alert("MULTIPLICAR");
         alert("RECORDATORIO!!!!!!");
         alert("Que ambos numeros difieran de cero");
         alert("Con eso en mente...sigamos");
-        x=prompt("Ingrese el primer numero: ");
-        y=prompt("Ingrese el segundo numero: ");
-
+        x=Number(prompt("Ingrese el primer numero: "));
+        y=Number(prompt("Ingrese el segundo numero: "));
+    
         do{
-            if(y==0){
-
+            if(y==0 || x==0){
+    
                 alert("QUE DIFIERAN DE CERO PORFAVOR :)");
                 alert("Ingrese de nuevo los 2 numeros");
-                x=prompt("Ingrese el primer numero: ");
-                y=prompt("ingrese el segundo numero: ");
+                x=Number(prompt("Ingrese el primer numero: "));
+                y=Number(prompt("Ingrese el segundo numero: "));
             }
-        }while(y==0);
-
-        alert("RESULTADO DE " + x, "x" + y, " ES: "+resultado);
-        break;
-    }
-
-    case 4:{
+        }while(y==0 || x==0);
+    
+        alert("RESULTADO DE "+x+"x"+y+" ES: "+resultado);    
+        seguir=prompt("Desea hacer otra operacion ? (s/n): ");
+    }else if(odd==4){
+    
         alert("DIVIDIR");
-        x=prompt("Ingrese el primer numero: ");
-        y=prompt("ingrese el segundo numero: ");
+        alert("RECORDATORIO!!!!!!");
+        alert("Que ambos numeros difieran de cero");
+        alert("Con eso en mente...sigamos");
+        x=Number(prompt("Ingrese el primer numero: "));
+        y=Number(prompt("Ingrese el segundo numero: "));
+        
+        do{
+            if(y==0 || x==0){
+    
+                alert("QUE DIFIERAN DE CERO PORFAVOR :)");
+                alert("Ingrese de nuevo los 2 numeros");
+                x=Number(prompt("Ingrese el primer numero: "));
+                y=Number(prompt("Ingrese el segundo numero: "));
+            }
+        }while(y==0 || x==0);
 
         resultado=x/y;
-
-        alert("RESULTADO DE " + x, "/" + y, " ES: "+resultado);
-        break;
+    
+        alert("RESULTADO DE "+x+"/"+y+" ES: "+resultado);
+        seguir=prompt("Desea hacer otra operacion ? (s/n): ");
     }
-
-    default:{
-
-        do{
-        alert("ERROR 404");
-        alert("ELIJA UNA OPCION VALIDA PROFAVOR");
-        odd=prompt("Elija una opcion: ");
-        }while(odd<=0 || odd>=5);
-        break;
-    }
-}
+    
+}while(seguir=='s');
