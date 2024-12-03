@@ -54,7 +54,7 @@ switch(odd){
                 alert("QUE DIFIERAN DE CERO PORFAVOR :)");
                 alert("Ingrese de nuevo los 2 numeros");
                 x=prompt("Ingrese el primer numero: ");
-                 y=prompt("ingrese el segundo numero: ");
+                y=prompt("ingrese el segundo numero: ");
             }
         }while(y==0);
 
@@ -73,14 +73,13 @@ switch(odd){
         break;
     }
 
-    default{
+    default:{
 
         do{
         alert("ERROR 404");
         alert("ELIJA UNA OPCION VALIDA PROFAVOR");
         odd=prompt("Elija una opcion: ");
         }while(odd<=0 || odd>=5);
-        
-        break
+        break;
     }
 }
