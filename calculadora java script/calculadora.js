@@ -41,6 +41,8 @@ do{
             }
         }while(x<y);
     
+        resultado= x - y;
+
         alert("RESULTADO DE "+x+"-"+y+" ES: "+resultado);
         seguir=prompt("Desea hacer otra operacion ? (s/n): ");
     }else if(odd==3){
@@ -62,6 +64,8 @@ do{
             }
         }while(y==0 || x==0);
     
+        resultado= x * y;
+
         alert("RESULTADO DE "+x+"x"+y+" ES: "+resultado);    
         seguir=prompt("Desea hacer otra operacion ? (s/n): ");
     }else if(odd==4){
